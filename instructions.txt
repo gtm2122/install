@@ -1,3 +1,5 @@
+XCODE installation
+http://www.pyladies.com/blog/Get-Your-Mac-Ready-for-Python-Programming/
 Hello, welcome to Dalio!
 
 Please run the below commands in the terminal of your workstation to commence Deep Learning
