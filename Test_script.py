@@ -4,11 +4,11 @@ from nndev import model_pip
 import os
 
 Model_name="ResNetModel_Pretrained.pth.tar"
-datapath="../datasets/"
+datapath="./datasets/"
 savepath="./ResNetModel.pth.tar"
 res = models.resnet18(pretrained=True)
 num_label = 0
-for i in os.listdir("../datasets/test/"):
+for i in os.listdir("./datasets/test/"):
     if len(i) > 9 and ".DS_Store" not in i:
         num_label+=1
 res.fc = nn.Linear(res.fc.in_features,num_label)
