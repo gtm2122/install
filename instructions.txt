@@ -1,0 +1,36 @@
+Hello, welcome to Dalio!
+
+Please run the below commands in the terminal of your workstation to commence Deep Learning
+
+1) git clone https://github.com/gtm2122/install.git
+A folder called "install" should have been created with new scripts inside.
+
+2) cd install
+
+3)sh install.sh
+
+
+A folder called " celeb_imgs" and "dataset_candidates" will have formed.
+Here you will select the dataset that you want to train the neural network to recognize.
+Pick a folder of your liking from celeb_imgs and copy it to dataset_candidates. 
+You can start with a few celebs and then gradually increase. I recommend starting with 3.
+
+4) python arrange_data.py
+
+This script will arrange the images in dataset_candidates into Training , Validation and Testing set.
+
+5) python Train_Script.py
+
+This script will train a neural network on the images that you selected.
+
+6) python Test_Script.py
+
+This script will test the trained neural network on images that were previously unseen.
+Any Misclassifed images will be displayed in a folder called "misc".
+
+
+Let me know if anything does not work. This script was not tested on a Mac so it is possible that you may face problems.
+If so, let me know, I will fix it :)
+
+
+Have Fun!
